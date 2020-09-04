@@ -70,6 +70,9 @@ RUN yum install -y --disableplugin=subscription-manager hostname procps \
 
 VOLUME ${NEXUS_DATA}
 
+RUN echo ulimit -n 65535 >>/etc/profile 
+
+
 EXPOSE 8081
 USER nexus
 
