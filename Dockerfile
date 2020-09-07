@@ -74,7 +74,7 @@ RUN echo ulimit -n 65535 >>/etc/profile
 
 
 EXPOSE 8081
-USER nexus
+USER root
 
 ENV INSTALL4J_ADD_VM_PARAMS="-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs"
 
